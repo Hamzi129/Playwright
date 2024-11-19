@@ -8,14 +8,14 @@ test.beforeEach(async ({ page }) => {
 
 test.describe("DemoWebshop Register and Login usin POM", () => {
   test("Register a new user", async ({ page }) => {
-    const register = new RegisterPage();
+    const register = new RegisterPage(page);
     await register.registerUser();
     await register.registrationSuccessful();
     await page.waitForTimeout(4000);
   });
 
   test("Login with Registered User", async ({ page }) => {
-    const lg = new LoginPage();
+    const lg = new LoginPage(page);
     await lg.Loginfun();
     await lg.LoginSuccessful();
     await page.waitForTimeout(4000);
