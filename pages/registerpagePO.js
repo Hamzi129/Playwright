@@ -2,7 +2,6 @@
 class RegisterPage {
     constructor(page) {
       this.page = page;
-      //this.registerlink = page.locator('[class="ico-register"]'); // click Register Button
       this.registerclick = ".ico-register";
       this.genderSelection = "#gender-male"; // gender selection
       this.firstNameInput = "#FirstName"; // First name field
