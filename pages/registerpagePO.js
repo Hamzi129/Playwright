@@ -20,7 +20,7 @@ class RegisterPage {
       await this.page.locator(this.genderSelection).click();
       await this.page.fill(this.firstNameInput, "hamza");
       await this.page.fill(this.lastNameInput, "saleem");
-      await this.page.fill(this.emailInput, "hamza90899@gmail.com");
+      await this.page.fill(this.emailInput, "hamza90090@gmail.com");
       await this.page.fill(this.passwordInput, "hamza129");
       await this.page.fill(this.confirmPasswordInput, "hamza129");
       await this.page.click(this.submitButton);
